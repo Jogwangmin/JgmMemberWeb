@@ -14,7 +14,7 @@ import notice.model.service.NoticeService;
 import notice.model.vo.Notice;
 
 /**
- * Servlet implementation class Listcontroller
+ * Servlet implementation class ListController
  */
 @WebServlet("/notice/list.do")
 public class ListController extends HttpServlet {
@@ -25,6 +25,7 @@ public class ListController extends HttpServlet {
      */
     public ListController() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -34,7 +35,7 @@ public class ListController extends HttpServlet {
 		NoticeService service = new NoticeService();
 		List<Notice> nList = service.selectNoticeList();
 		request.setAttribute("nList", nList);
-		RequestDispatcher view = request.getRequestDispatcher("/WEB_INF/views/notice/list.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/notice/list.jsp");
 		view.forward(request, response);
 	}
 
@@ -47,3 +48,4 @@ public class ListController extends HttpServlet {
 	}
 
 }
+

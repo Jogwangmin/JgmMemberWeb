@@ -35,7 +35,9 @@ public class JDBCTemplate {
 		}
 		return conn;
 	}
-	
+	/*
+	 * 연결해제
+	 */
 	public void close(Connection conn) {
 		if(conn != null) {
 			try {

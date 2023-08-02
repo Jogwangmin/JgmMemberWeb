@@ -46,7 +46,7 @@ public class InsertController extends HttpServlet {
 		int result = service.insertNotice(notice);
 		if(result > 0) {
 			// 성공하면 공지사항 리스트로 이동
-			response.sendRedirect("/WEB-INF/views/notice/list.jsp");
+			response.sendRedirect("/notice/list.do");
 		}else {
 			// 실패하면 실패메시지 출력
 			request.setAttribute("msg", "공지사항 등록이 완료되지 않았습니다.");
