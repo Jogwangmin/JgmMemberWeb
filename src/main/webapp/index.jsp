@@ -24,7 +24,7 @@
 				<div>
 					<input type="submit" value="로그인">
 					<input type="reset" value="취소">
-					<a href="/member/enroll.jsp">회원가입</a>
+					<a href="/member/register.do">회원가입</a>
 				</div>			
 			</form>
 		</fieldset>
