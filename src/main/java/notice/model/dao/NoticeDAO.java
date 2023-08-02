@@ -130,7 +130,7 @@ public class NoticeDAO {
 		// 전체 게시물의 갯수는 : 76
 		// 1페이지 보여줄 게시물 수 : 10
 		// 범위의 갯수 : 8
-		int totalCount = 201;	// - 전체 게시물의 갯수를 동적으로 가지고 와야함
+		int totalCount = 201;	// 전체 게시물의 갯수를 동적으로 가지고 와야함
 		int recordCountPerPage = 10;
 		int naviTotalCount = 0;
 		if(totalCount % recordCountPerPage > 0) {	// 소숫점일때 1을 더해주고 아니면 말고
