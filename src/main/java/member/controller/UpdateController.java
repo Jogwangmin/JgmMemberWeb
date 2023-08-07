@@ -15,13 +15,13 @@ import member.model.vo.Member;
  * Servlet implementation class UpdateServlet
  */
 @WebServlet("/member/update.do")
-public class UpdateServlet extends HttpServlet {
+public class UpdateController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UpdateServlet() {
+    public UpdateController() {
         super();
         // TODO Auto-generated constructor stub
     }
